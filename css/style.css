@@ -1,0 +1,121 @@
+
+body {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Enlarge header sizes */
+h1, h2, h3, h4 {
+    font-size: 2.5rem; /* Larger header size */
+}
+
+p, li {
+    font-size: 1.2rem;
+}
+
+/* Add a primary color theme */
+:root {
+    --primary-color: #007bff; /* Change this to any primary color */
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+}
+
+/* Navbar customization */
+.navbar-light {
+    background-color: var(--background-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero section styling */
+.bg-hero {
+    background: linear-gradient(135deg, #007bff 0%, #6c757d 100%);
+    color: white;
+    padding: 100px 0;
+}
+
+/* Section headings */
+h2, h3 {
+    color: var(--primary-color);
+}
+
+/* Services Section */
+#services ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#services li {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+/* Blog articles */
+#blog article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px 0;
+}
+
+/* Enhancing Button Style */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
+
+/* Scroll to top button */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-top:hover {
+    background-color: #0056b3;
+}
+
+/* Show scroll button on scroll */
+body.scrolled .scroll-top {
+    opacity: 1;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    .bg-hero {
+        padding: 60px 0;
+    }
+
+    #about, #services, #process, #blog, #contact {
+        padding: 20px 0;
+    }
+}
